@@ -116,6 +116,7 @@ jobs:
           # Moonshot
           MOONSHOT_API_KEY: ${{ secrets.LLM_MOONSHOT_API_KEY || secrets.MOONSHOT_API_KEY }}
           MOONSHOT_API_KEYS: ${{ secrets.LLM_MOONSHOT_API_KEYS || secrets.MOONSHOT_API_KEYS }}
+          MOONSHOT_MODEL: ${{ vars.MOONSHOT_MODEL || secrets.MOONSHOT_MODEL || 'moonshot-v1-128k' }}
 
           # DeepSeek
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}

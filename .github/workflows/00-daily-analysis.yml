@@ -113,6 +113,10 @@ jobs:
           OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL || secrets.OPENAI_BASE_URL }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || secrets.OPENAI_MODEL }}
 
+          # Moonshot
+          MOONSHOT_API_KEY: ${{ secrets.LLM_MOONSHOT_API_KEY || secrets.MOONSHOT_API_KEY }}
+          MOONSHOT_API_KEYS: ${{ secrets.LLM_MOONSHOT_API_KEYS || secrets.MOONSHOT_API_KEYS }}
+
           # DeepSeek
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           DEEPSEEK_API_KEYS: ${{ secrets.DEEPSEEK_API_KEYS }}
